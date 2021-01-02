@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>React.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/moon.css" id="theme">
+
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section>
+          <h2>JavaScript libraries</h2>
+          <img src="assets/js-libraries.jpg" alt="libraries">
+        </section>
+        <section>
+          <h2>React</h2>
+          <img src="assets/with-react.jpg" alt="with-react">
+        </section>
+        <section>
+          <h3>React libraries</h3>
+          <img src="assets/react-libraries.jpg" alt="libraries">
+        </section>
+        <section>
+          <h3>Websites which use React</h3>
+          <img src="assets/react-sites.png" alt="sites">
+        </section>
+        <section>
+          <h3>JSX and Virtual DOM</h3>
+          <img src="assets/react-features.jpg" alt="features">
+        </section>
+        <section>
+          <section>
+            <h3>JSX</h3>
+            <p>(short for JavaScript eXtension)</p>
+            <img src="assets/jsx-main.png" alt="jsx">
+          </section>
+          <section>
+            <p>JSX allows us to write HTML and JavaScript combined together in the same file</p>
+            <img src="assets/jsx-code.png" alt="jsx">
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>DOM</h3>
+            <p>(document object model)</p>
+            <img src="assets/dom.png" alt="dom">
+          </section>
+          <section>
+            <h3>Virtual DOM</h3>
+            <p>The Virtual DOM is a copy of the site’s DOM, and React JS uses this copy to see what parts of the actual DOM need to change when an event happens. </p>
+            <img src="assets/virtual-dom.jpg" alt="virtual-dom">
+          </section>
+          <section>
+            <p>Without using React JS, the entire DOM would have to update to reflect change. React, on the other hand, scans the Virtual DOM to see what changed after a user action and selectively updates that section of the DOM only.</p>
+            <img src="assets/v-dom.png" alt="virtual-dom">
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>Components</h3>
+            <p>React makes it much easier to create interfaces by breaking each page into small chunks. These fragments are called components. </p>
+            <img src="assets/react-components.jpg" alt="react-components">
+          </section>
+          <section>
+            <p>A React app can be seen as a component tree — having one root component (“App”) and then many nested child components.</p>
+            <img src="assets/components-app.png" alt="components-app">
+          </section>
+          <section>
+            <p>These are like javascript functions. They accept arbitrary inputs (called “props”) and need to return/ render some JSX code (React elements) which describes what should appear on the screen.</p>
+            <img src="assets/components.png" alt="components">
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>Function Components</h3>
+            <p>The simplest way to define a component is to write a JavaScript function. This function is a valid React component because it returns a React element. We call such components “function components” because they are literally JavaScript functions.</p>
+            <img src="assets/func-component-1.png" alt="func-component">
+          </section>
+          <section>
+            <p>The second way is to use ES6 syntax for creating a functional component. For this we have to use the arrow function as below:</p>
+            <img src="assets/func-component-2.png" alt="func-component">
+          </section>
+          <section>
+            <p>The third way of creating a functional component. Here also we will use ES6 but we will modify our arrow function. </p>
+            <img src="assets/func-component-3.png" alt="func-component">
+          </section>
+          <section>
+            <h3>So a Functional Component in React:</h3>
+            <ul>
+              <li>is a JavaScript/ES6 function;</li>
+              <li>must return a React element (JSX);</li>
+              <li>always starts with a capital letter (naming convention);</li>
+              <li>takes props as a parameter if necessary.</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>Class Components</h3>
+            <p>You can also use an ES6 class to define a component. Different from functional components, class components must have an additional render( ) method for returning JSX.</p>
+            <img src="assets/class-component.png" alt="class">
+          </section>
+          <section>
+            <h3>A Class Component:</h3>
+            <ul>
+              <li>is an ES6 class, will be a component once it ‘extends’ a React component;</li>
+              <li>takes Props (in the constructor) if needed;</li>
+              <li>must have a render( ) method for returning JSX.</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>Rendering a Component</h3>
+            <p>One of important concept of components is how they communicate. React has a special object called a prop (stands for property) which we use to transport data from one component to another.</p>
+            <img src="assets/rendering.png" alt="rendering">
+          </section>
+          <section>
+            <p>Props are custom values and they also make components more dynamic. Since the React component is the child here, we need to define props on its parent (App), so we can pass the values and get the result simply by accessing the prop "name".</p>
+            <img src="assets/rendering-2.png" alt="rendering">
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>Lifecycle Methods</h3>
+            <img src="assets/lifecycle.png" alt="lifecycle">
+          </section>
+          <section>
+            <p>render()</p>
+            <img src="assets/render.png" alt="render">
+            <p>componentDidMount()</p>
+            <p>Method  is called as soon as the component is mounted and ready. This is a good place to initiate API calls, if you need to load data from a remote endpoint.</p>
+          </section>
+          <section>
+            <p>componentDidUpdate()</p>
+            <img src="assets/componentDidUpdate.png" alt="componentDidUpdate">
+            <p>componentWillUnmount()</p>
+            <p>shouldComponentUpdate()</p>
+            <img src="assets/shouldComponentUpdate.png" alt="shouldComponentUpdate">
+          </section>
+          <section>
+            <p>getDerivedStateFromProps()</p>
+            <img src="assets/getDerivedStateFromProps.png" alt="getDerivedStateFromProps">
+            <p>getSnapshotBeforeUpdate()</p>
+            <img src="assets/getSnapshotBeforeUpdate.png" alt="getSnapshotBeforeUpdate">
+          </section>
+        </section>
+        <section>
+          <p>More information about React you can find on the official site</p>
+          <a href="https://reactjs.org/" target="_blank">reactjs.org</a>
+          <br>
+          <br>
+          <br>
+          <a href="#">Go to the first slide</a>
+        </section>
+			</div>
+    </div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
