@@ -30,7 +30,7 @@ At the heart of any basic website are HTML documents. Web browsers read these do
 If a developer uses JSX to manipulate and update its DOM, React JS creates something called a Virtual DOM. The Virtual DOM (like the name implies) is a copy of the site’s DOM, and React JS uses this copy to see what parts of the actual DOM need to change when an event happens (like a user clicking a button). 
 
 ## Slide 6.2. 
-Let’s say a user enters a comment in a blog post form and pushes the “Comment” button. Without using React JS, the entire DOM would have to update to reflect this change (using the time and processing power it takes to make this update). React, on the other hand, scans the Virtual DOM to see what changed after a user action (in this case, a comment being added) and selectively updates that section of the DOM only. This selective rendering provides a major performance boost. It saves the effort of recalculating the CSS style, layout for the page and rendering for the entire page.
+Without using React JS, the entire DOM would have to update to reflect change. React, on the other hand, scans the Virtual DOM to see what changed after a user action and selectively updates that section of the DOM only.
 
 ## Slide 7. Components
 React makes it much easier to create interfaces by breaking each page into small chunks. These fragments are called components. Each selection of the page shown in the figure is considered a component. Here is an example of pagination into components.
